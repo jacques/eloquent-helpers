@@ -1,0 +1,36 @@
+{
+    "name": "jacques/eloquent-helpers",
+    "authors": [
+        {
+            "name": "Jacques Marneweck",
+            "email": "jacques@siberia.co.za"
+        }
+    ],
+    "require": {
+        "php": "^8.0",
+        "illuminate/database": "^9.0 || ^10.0 || ^11.0"
+    },
+    "require-dev": {
+        "ergebnis/composer-normalize": "^2.44",
+        "phpunit/phpunit": "^9.5 || ^10.0 || ^11.4"
+    },
+    "config": {
+        "optimize-autoloader": true,
+        "prefer-dist": true,
+        "sort-packages": true,
+        "allow-plugins": {
+            "composer/package-versions-deprecated": true,
+            "ergebnis/composer-normalize": true
+        }
+    },
+    "autoload": {
+        "psr-4": {
+            "Jacques\\Eloquent\\Helpers\\": "src/"
+        }
+    },
+    "autoload-dev": {
+        "psr-4": {
+            "Jacques\\Eloquent\\Helpers\\Tests\\": "tests/"
+        }
+    }
+}
